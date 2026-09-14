@@ -8,7 +8,7 @@ heir_lattigo_lib(
     go_library_name = "criteo",
     heir_opt_flags = [
         "--annotate-module=backend=lattigo scheme=ckks",
-        "--torch-linalg-to-ckks=min-slot-count=32768 greedy-modulus-switch-after-mul=true experimental-disable-loop-unroll=true greedy-level-budget=11 first-mod-bits=55 scaling-mod-bits=30",
+        "--torch-linalg-to-ckks=min-slot-count=32768 greedy-modulus-switch-after-mul=true greedy-level-budget=11 first-mod-bits=55 scaling-mod-bits=30",
         "--scheme-to-lattigo",
     ],
     importpath = "fully_homomorphic_encryption/demos/criteo/lattigo/criteo",
